@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include('parts/nav.ejs') %>
+    <section class="product-details">
+        <a href="/"><button>Back</button></a>
+        <h1><%= product.title %></h1>
+        <h1>Category : <%= product.category %></h1>
+        <h1>Rate : <%= product.rating.rate %></h1>
+        <p><%= product.description %></p>
+        <p class="price">Price: $<%= product.price %></p>
+        <img src="<%= product.image %>" alt="...">
+    </section>
+    <%- include('parts/footer.ejs') %>
+    
+</body>
+</html>

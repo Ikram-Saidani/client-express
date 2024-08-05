@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    position: sticky;
+    top: 0;
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 1111111;
+}
+nav h4{
+    text-transform: capitalize;
+    font-style: italic;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+}
+h1{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    padding: 20px 0;
+}
+h2{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    padding: 20px 0;
+}
+#prods img{
+    width: 150px;
+    margin: 20px auto;
+}
+#prods{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    background-color: #f0f0f0;
+}
+#prods .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.215);
+    text-align: center;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+}
+.product:hover {
+    transform: translateY(-10px);
+}
+.product button{
+    background-color: rgb(84, 84, 84);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.product button:hover{
+    background-color: rgb(58, 58, 58);
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-details button{
+    background-color: rgb(84, 84, 84);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.product-details button:hover{
+    background-color: rgb(58, 58, 58);
+}
+.product-details p{
+    margin: auto 20px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.price{
+    font-weight: bold;
+    font-size: 35px;
+    color: gray;
+}
+.product-details img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 60%;
+    min-height: 70vh;
+    margin: 0px auto 20px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+    background-color: beige;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form label{
+    font-size: 17px;
+    color: gray;
+}
+form input, textarea{
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    width: 100%;
+}
+form input[type="submit"]{
+    background-color: rgb(84, 84, 84);
+    color: white;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(58, 58, 58);
+}
+footer{
+    background-color: rgb(84, 84, 84);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+}
+footer p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}

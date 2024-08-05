@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include('parts/nav.ejs') %>
+
+    <h1>Add New Product</h1>
+    <form action="/add" method="post">
+        <div>
+            <label for="title">Title :</label>
+            <input id="title" type="text" name="title" required placeholder="Title">    
+        </div>
+        <div>
+            <label for="price">Price :</label>
+            <input id="price" type="number" step="0.01" name="price" placeholder="Price" required>
+        </div>
+        <div>
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" required placeholder="Description"></textarea>
+        </div>
+        <div>
+            <label for="category">Category :</label>
+            <input id="category" type="text" name="category" placeholder="Category" required>
+        </div>
+        <div>
+            <label for="image">Image URL :</label>
+            <input id="image" type="text" name="image" placeholder="Image URL">    
+        </div>
+        <div>
+            <label for="rate">Rate :</label>
+            <input id="rate" type="number" step="0.1" name="rate" placeholder="Rate" required>
+        </div>
+        <div>
+            <label for="count">Count :</label>
+            <input id="count" type="number" step="1" name="count" placeholder="Count" required>
+        </div>
+       <input type="submit" value="Add Product">
+    </form>
+
+    <%- include('parts/footer.ejs') %>
+</body>
+</html>

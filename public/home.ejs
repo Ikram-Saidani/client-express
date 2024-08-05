@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include('parts/nav.ejs') %>
+    <h1>Welcome to Our E-Commerce Page!</h1>
+    <main id="prods">
+        <% for( let i = 0; i < products.length; i++ ) { %>
+            <div class="product">
+                <h2> <%= products[i].title %> </h2>
+                <img src="<%= products[i].image %>" alt="...">
+                <div>
+                    <a href="/product/<%= products[i]._id %>"><button>View</button></a>
+                    <a href="/update/<%= products[i].id %>"><button>Update</button></a>
+                    <a href="/delete/<%= products[i].id %>"><button>Delete</button></a>
+                </div>
+            </div>
+            <% } %>
+    </main>
+    <%- include('parts/footer.ejs') %>
+    
+</body>
+</html>
